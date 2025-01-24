@@ -28,7 +28,8 @@
 
                 <div
                     style="width: 385px; text-indent: -30px; font-family: monospace; background: #1b1b1b; padding: 20px 30px; text-align: center; display: inline-block">
-                    $&emsp;&emsp;npm install react-native-spendcodes</div>
+                    <span class="highlight">$</span>
+                    &emsp;&emsp;npm install react-native-spendcodes</div>
 
             </div>
 
@@ -62,7 +63,7 @@
                 <div class="p-6 pt-6">
 
                     <div class="text-2xl font-bold mb-2">3. Checkout</div>
-                    <p class="text-muted-foreground">And tap to confirm the amount to spend &check;</p>
+                    <p class="text-muted-foreground">And tap to confirm the amount to spend <span class="highlight">&check;</span></p>
                 </div>
             </div>
         </div>
@@ -84,7 +85,7 @@
 
                 <div class="p-6 pt-6">
                     <h3 class="text-xl font-bold mb-2">Merchants</h3>
-                    <p class="text-muted-foreground">2-3% back in your pocket with all benefits of digital transactions.</p>
+                    <p class="text-muted-foreground"><span class="highlight">2-3%</span> back in your pocket with all benefits of digital transactions.</p>
                 </div>
             </div>
             <div class="rounded-[calc(var(--radius))] border-border border bg-card text-card-foreground shadow">
@@ -110,7 +111,7 @@
                 <div class="p-6 pt-6">
 
                     <div class="text-2xl font-bold mb-2">Mobile App</div>
-                    <p class="text-muted-foreground">Our iOS and Android apps are built to scan & spend stablecoins. No fees or need for other tokens. </p>
+                    <p class="text-muted-foreground">Our <span class="highlight">iOS and Android apps</span> are built to scan & spend stablecoins. No fees or need for other tokens. </p>
 
                 </div>
             </div>
@@ -127,7 +128,7 @@
                 <div class="p-6 pt-6">
 
                     <div class="text-2xl font-bold mb-2">Web Checkout </div>
-                    <p class="text-muted-foreground">Not a developer? No problem. Our Mobile & Desktop Web Checkout is always open and supports many wallets.</p>
+                    <p class="text-muted-foreground">Not a developer? No problem. Our Mobile & Desktop Web Checkout is open to support many wallets.</p>
                 </div>
             </div>
 
@@ -158,6 +159,7 @@
 </body>
 
 <style type="text/css">
+
     @media (max-width: 480px) {
       /* CSS rules to apply on devices with a screen width of 480px or less */
       h1.text-4xl { 
@@ -165,6 +167,9 @@
         font-size: 2.75em; 
       }
     }
+
+    .highlight{ color: hsl(175.66deg 67.86% 56.08%); }
+
   </style>
 
 </html>

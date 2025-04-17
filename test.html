@@ -27,15 +27,16 @@
 
     <section class="container mx-auto px-4 py-6">
 
+        <img src="assets/logo-light.png" width="60" style="position: relative; margin-left: -10px;" id="logo">
+
         <!-- Calendly badge widget begin -->
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/spendcodes/30min', text: 'Book a demo', color: '#0069ff', textColor: '#ffffff' }); }</script>
 <!-- Calendly badge widget end -->
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center" style="gap:0">
             <div class="space-y-6">
-                <span style="font-family: Krungthep, monospace, sans-serif">Spendcodes ($) -----------</span>
 
                 <h1 class="text-4xl md:text-6xl font-bold">It's not crypto, <br><span class="highlight">it's 2-3% <span style="white-space: nowrap">savings at</span> <span style="white-space: nowrap">every checkout</span></span></h1>
 
@@ -81,7 +82,7 @@
             
         </div>
         <div style="margin-top: 40px;">
-            <p class="text-muted-foreground" style="margin-bottom: 30px; text-align: center;">Merchant presented checkout through a Spendcode</p>
+            <p class="text-muted-foreground" style="margin-bottom: 30px; text-align: center;">Merchant presented checkout through a Spendcode on any mobile device (SoftPOS)</p>
             <video controls loop poster="./assets/1min480thumb.png" style="margin: auto; max-width: 640px; width: 100%;">
                 <source src="./assets/480.mov" type="video/mp4">
                 Your browser does not support the video tag.
@@ -193,14 +194,9 @@
         left: 50% !important; 
         margin-left: -70px!important; 
       }
-        
-    }
 
-    @media (max-width: 1024px) {
-        #logo {
-          margin-bottom: 50px;
-        }
-           
+        #logo { margin-bottom: 20px; } 
+        
     }
 
     @media (min-width: 481px){
@@ -214,7 +210,5 @@
     .highlight{ color: hsl(175.66deg 67.86% 56.08%); }
 
   </style>
-
-  
 
 </html>

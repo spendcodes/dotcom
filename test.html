@@ -1,112 +1,329 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spendcodes.com FAQ</title>
-    <style>
-        .accordion {
-            width: 80%;
-            margin: 20px auto;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            overflow: hidden;
-        }
+    <meta name="description"
+        content="Spendcodes - In-Store to Online Stablecoin Checkout">
 
-        .accordion-item {
-            border-bottom: 1px solid #eee;
-        }
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="./assets/c7fb03d04845c2b1.css">
 
-        .accordion-item.active .accordion-content {
-            display: block;
-        }
-
-        .accordion-title {
-            background-color: #f9f9f9;
-            color: #333;
-            padding: 15px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .accordion-title:hover {
-            background-color: #eee;
-        }
-
-        .accordion-content {
-            padding: 15px;
-            display: none;
-            background-color: #fff;
-        }
-
-        .accordion-icon {
-            font-size: 1.2em;
-        }
-    </style>
+    <title>Spendcodes - Stablecoin Checkout</title>
 </head>
-<body>
 
-    <div class="accordion">
-        <div class="accordion-item">
-            <div class="accordion-title" onclick="toggleAccordion(this.parentNode)">
-                What is Spendcodes.com?
-                <span class="accordion-icon">+</span>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6HZZR0J9V0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6HZZR0J9V0');
+</script>
+
+<body style="cursor: default; max-width: 1200px; margin: 0 auto;">
+
+    <section class="container mx-auto px-4 py-6">
+
+        <img src="assets/logo-light.png" width="60" style="position: relative; margin-left: -10px;" id="logo">
+
+        <!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/spendcodes/30min', text: 'Book a demo', color: '#0069ff', textColor: '#ffffff' }); }</script>
+<!-- Calendly badge widget end -->
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center" style="gap:0">
+            <div class="space-y-6">
+
+                <h1 class="text-4xl md:text-6xl font-bold">It's not crypto to <br><span class="highlight"><span style="white-space: nowrap">save 60+% on fees</span> <span style="white-space: nowrap">with Stablecoins</span></span></h1>
+
+                <p class="text-muted-foreground">Accept Stablecoins (USDC) at checkout <br> and get Dollars (USD) in your bank account</p>
+
+                <p><a href="https://form.typeform.com/to/m0yMmmhD">Try $5000 of transactions for FREE →</a></p>
+
+                <p class="text-muted-foreground">See how it works ↓</p>
+
             </div>
-            <div class="accordion-content">
-                <p>Spendcodes.com is a platform dedicated to helping users find and utilize various promotional codes, discounts, and deals to save money on their online purchases.</p>
+
+            <div class="aspect-square relative">
+                <video autoplay="" muted="" loop="" playsinline="">
+                    <source src="scan-optimized.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
+    </section>
 
-        <div class="accordion-item">
-            <div class="accordion-title" onclick="toggleAccordion(this.parentNode)">
-                How do I find discount codes on Spendcodes.com?
-                <span class="accordion-icon">+</span>
+    <section class="container mx-auto px-4 py-20 bg-muted/50">
+        <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="rounded-[calc(var(--radius))] border-border border bg-card text-card-foreground shadow">
+                <div class="p-6 pt-6">
+
+                    <div class="text-2xl font-bold mb-2">1. Stablecoin</div>
+                    <p class="text-muted-foreground">Customers with USDC visit a store or site.</p>
+                </div>
             </div>
-            <div class="accordion-content">
-                <p>You can find discount codes by browsing our categories, searching for specific stores, or checking out our featured deals section. We regularly update our database with the latest offers.</p>
+            <div class="rounded-[calc(var(--radius))] border-border border bg-card text-card-foreground shadow">
+                <div class="p-6 pt-6">
+
+                    <div class="text-2xl font-bold mb-2">2. Spendcode</div>
+                    <p class="text-muted-foreground"> Code with order amount is ready to scan.</p>
+                </div>
             </div>
+            <div class="rounded-[calc(var(--radius))] border-border border bg-card text-card-foreground shadow">
+                <div class="p-6 pt-6">
+
+                    <div class="text-2xl font-bold mb-2">3. Checkout</div>
+                    <p class="text-muted-foreground">Scan and confirm the amount to spend <span class="highlight">&check;</span></p>
+                </div>
+            </div>
+            
         </div>
-
-        <div class="accordion-item">
-            <div class="accordion-title" onclick="toggleAccordion(this.parentNode)">
-                Are the codes on Spendcodes.com always valid?
-                <span class="accordion-icon">+</span>
-            </div>
-            <div class="accordion-content">
-                <p>We strive to provide the most up-to-date and valid codes. However, the validity of codes can change without our immediate knowledge. We encourage users to check the expiration dates and terms of use on the retailer's website.</p>
-            </div>
+        <div style="margin-top: 40px;">
+            <p class="text-muted-foreground" style="margin-bottom: 30px; text-align: center;">Merchant presented checkout through a Spendcode on any mobile device (SoftPOS)</p>
+            <video controls loop poster="./assets/Spendcodes-TryToday-Thumb3.png" style="margin: auto; max-width: 640px; width: 100%;">
+                <source src="./assets/Spendcodes-TryToday720.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
+    </section>
+
+    <section class="container mx-auto px-4 py-20">
+        <h2 class="text-3xl font-bold text-center mb-12">Who It's For</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <div class="rounded-[calc(var(--radius))] border-border border bg-card text-card-foreground shadow">
+
+                <div class="p-6 pt-6">
+                    <h3 class="text-xl font-bold mb-2">Merchants</h3>
+                    <p class="text-muted-foreground"><span class="highlight">2-3%</span> transaction fee reduction with all benefits of digital payments.</p>
+                </div>
+            </div>
+            <div class="rounded-[calc(var(--radius))] border-border border bg-card text-card-foreground shadow">
+                <div class="p-6 pt-6">
+                    <h3 class="text-xl font-bold mb-2">Businesses</h3>
+                    <p class="text-muted-foreground">Scale across enterprise without the cost of bespoke hardware.</p>
+                </div>
+            </div>
+            <div class="rounded-[calc(var(--radius))] border-border border bg-card text-card-foreground shadow">
+                <div class="p-6 pt-6">
+                    <h3 class="text-xl font-bold mb-2">Developers</h3>
+                    <p class="text-muted-foreground">"One line" integration into apps, sites, and data analysis suites.</p>
+                </div>
+            </div>
+            <div class="rounded-[calc(var(--radius))] border-border border bg-card text-card-foreground shadow">
+                <div class="p-6 pt-6">
+                    <h3 class="text-xl font-bold mb-2">Customers</h3>
+                    <p class="text-muted-foreground">Scan & spend with a mobile wallet anywhere. No waiting in line.
+                    </p>
+                </div>
+            </div>
 
         </div>
+    </section>
 
-    <script>
-        function toggleAccordion(item) {
-            const content = item.querySelector('.accordion-content');
-            const icon = item.querySelector('.accordion-icon');
-            const isActive = item.classList.contains('active');
+    <section class="container mx-auto px-4 py-20 bg-muted/50" style="border-bottom: 2px dotted #000">
+        <h2 class="text-3xl font-bold text-center mb-12">Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-            // Close any other open items
-            const openItems = document.querySelectorAll('.accordion-item.active');
-            openItems.forEach(openItem => {
-                if (openItem !== item) {
-                    openItem.classList.remove('active');
-                    openItem.querySelector('.accordion-content').style.display = 'none';
-                    openItem.querySelector('.accordion-icon').textContent = '+';
+            <div class="rounded-[calc(var(--radius))] border-border border bg-card text-card-foreground shadow">
+                <div class="p-6 pt-6">
+
+                    <div class="text-2xl font-bold mb-2">&lt;Spendcode&ensp;/&gt;</div>
+                    <p class="text-muted-foreground">Developers can add our code packages into sites & apps. More checkout integrations coming soon!</p>
+                </div>
+            </div>
+           
+            <div class="rounded-[calc(var(--radius))] border-border border bg-card text-card-foreground shadow">
+                <div class="p-6 pt-6">
+
+                    <div class="text-2xl font-bold mb-2">Web SoftPOS</div>
+                    <p class="text-muted-foreground">
+                        Not a developer? Our webapp is open for payment from customer wallets like Metamask & Coinbase.
+                    </p>
+                </div>
+            </div>
+
+            <div class="rounded-[calc(var(--radius))] border-border border bg-card text-card-foreground shadow">
+                <div class="p-6 pt-6">
+
+                    <div class="text-2xl font-bold mb-2">Mobile App</div>
+                    <p class="text-muted-foreground">Customers can use our iOS & Android apps to scan & spend. No fees or need for native tokens!</p>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="container mx-auto px-4">
+            <div style="text-align: center;">
+                <iframe style="margin: auto" src="https://spendcodes.substack.com/embed" width="340" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+    </section>
+
+    <section class="bg-muted/50 container mx-auto px-4 py-20">
+        <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+
+        <div style="max-width: 767px; margin: 0 auto;">
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-title" onclick="toggleAccordion(this.parentNode)">
+                        How can Spendcodes save this much?
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Our solution does not run on legacy card networks. So, it is not subject to the series of typical fees taken by different private entities that enable transactions on that network to process, clear, and settle. </li>
+                            <li>Our service runs on a leading public blockchain network. Many institutions including Visa report Trillions of successful, secure blockchain transaction value using a digital dollar called Stablecoins: <a href="https://visaonchainanalytics.com/transactions">https://visaonchainanalytics.com/transactions</a></li>
+                            <li>Blockchains are a revolutionary financial technology that have more than a decade of global public use. They process and automate transaction functions without needing several intermediaries which allows for radical cost efficiency. </li>
+                            <li>Stablecoins are a digital dollar that represent dollars in a bank reserve. They are available for public transfer of ownership and, therefore, can be honored and treated much like paper cash. </li>      
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="accordion-item">
+                    <div class="accordion-title" onclick="toggleAccordion(this.parentNode)">
+                        How does this work? What are the risks?
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>We detail how to compare our service to other familiar services here: <a href="https://spendcodes.substack.com/p/tap-to-pay-or-scan-spendcodes">https://spendcodes.substack.com/p/tap-to-pay-or-scan-spendcodes</a> </li>
+                            <li>Spendcodes is a merchant acceptance service. We do not custody or hold funds on your behalf. You own the master bank account and/or on-chain stablecoin account. We are here to help you use our service at your convenience with acknowledgement that funds are in only your control and therefore at your risk. </li>
+                            <li>Our conversion from USDC to USD utilizes a popular, SOC2 compliant service that provides their own Terms and Privacy Policy which our users agree to by using auto-conversion in our service. </li>
+                            <li>Additionally, in early 2025, legislation proposals like the GENIUS and STABLE acts have progressed in Congress and top regulatory organizations in the United States like the OCC, SEC, Department of the Treasury have openly endorsed Stablecoins as a modern medium for the dollar. While finalized law is still in motion, U.S. banks, fintech apps, and institutions are already using Stablecoins in their nationwide and worldwide operations. </li>           
+                       </ul>
+                    </div>
+                </div>
+        
+                <div class="accordion-item">
+                    <div class="accordion-title" onclick="toggleAccordion(this.parentNode)">
+                        How much does Spendcodes cost?
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>We save merchants and businesses 60+% by reducing transaction processing fees by 2-3%</li>
+                            <li>We are offering $5000 of zero-fee lifetime transactions at no obligation for all new sign ups before June 2025</li>
+                            <li>For every dollar after, we invoice for 1% of transaction volume to accept USDC and 0.5% to convert to USD (1.5%)</li>
+                         </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-title" onclick="toggleAccordion(this.parentNode)">
+                        How can I try Spendcodes?
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ol>
+                            <li>You can start for FREE with any wifi enabled mobile device and use it  standalone or alongside your point of sale </li>
+                            <li><a href="https://form.typeform.com/to/m0yMmmhD">Sign up</a> and visit https://checkout.spendcodes.com from the mobile device</li>
+                            <li>You’ll generate your public address. It is safe and easy to share your public address with all your locations and employees by email or text message. Your public address does not hold funds, it just allows you to accept USDC securely to your master account.</li>
+                            <li>When a customer wants to pay in USDC, you just need to punch in the order amount into the mobile device and show them the Spendcode to scan.</li>
+                            <li>Millions of customers that use Metamask Mobile or Coinbase Wallet are able to scan to spend easily at your location and we expect many more apps soon.</li>
+                            <li>In just a few seconds they will be able to send Stablecoins and you will see the transaction was received on your mobile device. </li>
+                            <li>We are here at hello@spendcodes.com to make sure you can test, distribute and scale your massive Stablecoin transaction savings safely and successfully. </li>
+                        </ol>
+                    </div>
+                </div>
+        
+                </div>
+        
+            <script>
+                function toggleAccordion(item) {
+                    const content = item.querySelector('.accordion-content');
+                    const icon = item.querySelector('.accordion-icon');
+                    const isActive = item.classList.contains('active');
+        
+                    // Close any other open items
+                    const openItems = document.querySelectorAll('.accordion-item.active');
+                    openItems.forEach(openItem => {
+                        if (openItem !== item) {
+                            openItem.classList.remove('active');
+                            openItem.querySelector('.accordion-content').style.display = 'none';
+                            openItem.querySelector('.accordion-icon').textContent = '+';
+                        }
+                    });
+        
+                    item.classList.toggle('active');
+                    if (isActive) {
+                        content.style.display = 'none';
+                        icon.textContent = '+';
+                    } else {
+                        content.style.display = 'block';
+                        icon.textContent = '-';
+                    }
                 }
-            });
+            </script>
+         
+    </div>
+        
+    
+    </section>
 
-            item.classList.toggle('active');
-            if (isActive) {
-                content.style.display = 'none';
-                icon.textContent = '+';
-            } else {
-                content.style.display = 'block';
-                icon.textContent = '-';
-            }
-        }
-    </script>
+    
+    <section class="container mx-auto px-4 py-20" style=" font-size: 11px; line-height: 3em; vertical-align: top; padding: 50px;">
+      <ul style="list-style-type: none; padding: 0; margin: 0;">
+        <li style=" display: inline-block; margin-right: 10px">© 2025 Spendcodes</li>
+        <li style=" display: inline-block; margin-right: 10px;"><a href="https://linkedin.com/company/spendcodes">Linkedin</a></li>
+        <li style=" display: inline-block; margin-right: 10px;"><a href="https://spendcodes.substack.com">Substack</a></li>
+        <li style=" display: inline-block; margin-right: 10px;"><a href="https://x.com/spendcodes">X/Twitter</a></li>
+        <li style=" display: inline-block; margin-right: 10px;"><a href="mailto:hello@spendcodes.com">Email</a></li>
+      </ul>
+</section>
+
+
 
 </body>
+
+<style type="text/css">
+
+    ul, ol {
+        list-style: disc;
+        margin: 10px;
+        padding: 10px 20px;
+    }
+
+    ol { list-style: decimal }
+    li { margin-bottom: 10px; }
+    a { text-decoration: underline }
+
+    @media (max-width: 480px) {
+      /* CSS rules to apply on devices with a screen width of 480px or less */
+        
+      h1.text-4xl { 
+        line-height: 1em; 
+        font-size: 2.75em; 
+      }
+
+      .calendly-badge-widget { 
+        left: 50% !important; 
+        margin-left: -70px!important; 
+      }
+
+        #logo { margin-bottom: 20px; } 
+        
+    }
+
+    @media (min-width: 481px){
+        .calendly-badge-widget { 
+           right: 35px !important; 
+           bottom: 35px !important; 
+      }
+    }
+
+    /* #43dbd0 */
+    .highlight{ color: hsl(175.66deg 67.86% 56.08%); }
+
+  </style>
+
 </html>

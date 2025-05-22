@@ -1,3 +1,5 @@
 # dotcom
 
-Outdated. Strictly for the Smithsonian.
+This repository is outdated and no longer in use. 
+
+
